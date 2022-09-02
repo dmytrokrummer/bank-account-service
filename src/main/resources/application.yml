@@ -1,0 +1,15 @@
+server:
+  servlet:
+    context-path: /bank-account-service
+  port: 8055
+  error:
+    include-message: always
+
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/bank-account
+    username: admin
+    password: admin
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
